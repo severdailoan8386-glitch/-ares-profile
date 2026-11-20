@@ -7,6 +7,32 @@
 <meta name="theme-color" content="#090909">
 <title>ARESS | LEGENDARY GUILD</title>
 
+    
+<div class="uid-info">
+  <p>🛡️ UID QUÂN ĐOÀN</p>
+  <div class="uid-copy">
+    <strong>3104786866</strong>
+    <button onclick="copyUID('3104786866', this)">COPY</button>
+  </div>
+
+  <p>🎮 UID Ａ Ｒ Ｅ Ｓ 삔༗</p>
+  <div class="uid-copy">
+    <strong>2636756388</strong>
+    <button onclick="copyUID('2636756388', this)">COPY</button>
+  </div>
+</div>
+
+<script>
+function copyUID(uid, btn) {
+  navigator.clipboard.writeText(uid).then(() => {
+    btn.textContent = "ĐÃ COPY ✓";
+    setTimeout(() => btn.textContent = "COPY", 1500);
+  }).catch(() => {
+    alert("Không thể copy. Hãy thử lại nhé!");
+  });
+}
+</script>
+
 <style>
 * {
     margin: 0;
